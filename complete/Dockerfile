@@ -6,9 +6,6 @@ RUN apt-get install -y wget git-core maven
 
 WORKDIR /ecs-demo-rest-api
 
-# Pull project
-RUN git clone https://github.com/cjayarathne/ecs-demo-rest-api.git
-
 # Prepare by downloading dependencies
 ADD pom.xml /ecs-demo-rest-api/complete/pom.xml
 
