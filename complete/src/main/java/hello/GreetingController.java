@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @Controller
 public class GreetingController {
 
-    private static final String template = "Hello, %s!";
+    private static final String template = "new Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @CrossOrigin(origins = "*")
