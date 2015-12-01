@@ -26,5 +26,12 @@ public class GreetingController {
         System.out.println("==== in greeting ====");
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
+    
+    @RequestMapping("/ping")
+    public @ResponseBody Greeting Ping() {
+        System.out.println("==== Health Check ====");
+        return new Greeting(0, "Hello");
+    }
+
 
 }
